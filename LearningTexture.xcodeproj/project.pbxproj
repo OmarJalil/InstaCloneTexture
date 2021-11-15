@@ -10,20 +10,24 @@
 		8D3F6FAA2743153100F5EC7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3F6FA92743153100F5EC7F /* AppDelegate.swift */; };
 		8D3F6FAC2743153100F5EC7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3F6FAB2743153100F5EC7F /* SceneDelegate.swift */; };
 		8D3F6FAE2743153100F5EC7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3F6FAD2743153100F5EC7F /* ViewController.swift */; };
-		8D3F6FB12743153100F5EC7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3F6FAF2743153100F5EC7F /* Main.storyboard */; };
 		8D3F6FB32743153300F5EC7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3F6FB22743153300F5EC7F /* Assets.xcassets */; };
 		8D3F6FB62743153300F5EC7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3F6FB42743153300F5EC7F /* LaunchScreen.storyboard */; };
+		8DC752AE274317EA00A4A7B3 /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752AD274317EA00A4A7B3 /* BaseNode.swift */; };
+		D83880E505722122F9213A79 /* Pods_LearningTexture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0F4ADFBE460F14CDA7AC1A /* Pods_LearningTexture.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7ACCDBC8356C55DCC832BFA0 /* Pods-LearningTexture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningTexture.release.xcconfig"; path = "Target Support Files/Pods-LearningTexture/Pods-LearningTexture.release.xcconfig"; sourceTree = "<group>"; };
 		8D3F6FA62743153100F5EC7F /* LearningTexture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningTexture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3F6FA92743153100F5EC7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D3F6FAB2743153100F5EC7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8D3F6FAD2743153100F5EC7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8D3F6FB02743153100F5EC7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D3F6FB22743153300F5EC7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D3F6FB52743153300F5EC7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D3F6FB72743153300F5EC7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC752AD274317EA00A4A7B3 /* BaseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
+		D0855F9F1C8C1BCE0A97D686 /* Pods-LearningTexture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningTexture.debug.xcconfig"; path = "Target Support Files/Pods-LearningTexture/Pods-LearningTexture.debug.xcconfig"; sourceTree = "<group>"; };
+		FF0F4ADFBE460F14CDA7AC1A /* Pods_LearningTexture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningTexture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83880E505722122F9213A79 /* Pods_LearningTexture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6876280D5BB3BAFDDC94DB02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0855F9F1C8C1BCE0A97D686 /* Pods-LearningTexture.debug.xcconfig */,
+				7ACCDBC8356C55DCC832BFA0 /* Pods-LearningTexture.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		71259EA342456C1C8FB71D3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F4ADFBE460F14CDA7AC1A /* Pods_LearningTexture.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D3F6F9D2743153100F5EC7F = {
 			isa = PBXGroup;
 			children = (
 				8D3F6FA82743153100F5EC7F /* LearningTexture */,
 				8D3F6FA72743153100F5EC7F /* Products */,
+				6876280D5BB3BAFDDC94DB02 /* Pods */,
+				71259EA342456C1C8FB71D3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +82,8 @@
 			children = (
 				8D3F6FA92743153100F5EC7F /* AppDelegate.swift */,
 				8D3F6FAB2743153100F5EC7F /* SceneDelegate.swift */,
+				8DC752AD274317EA00A4A7B3 /* BaseNode.swift */,
 				8D3F6FAD2743153100F5EC7F /* ViewController.swift */,
-				8D3F6FAF2743153100F5EC7F /* Main.storyboard */,
 				8D3F6FB22743153300F5EC7F /* Assets.xcassets */,
 				8D3F6FB42743153300F5EC7F /* LaunchScreen.storyboard */,
 				8D3F6FB72743153300F5EC7F /* Info.plist */,
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D3F6FBA2743153300F5EC7F /* Build configuration list for PBXNativeTarget "LearningTexture" */;
 			buildPhases = (
+				CB7E4D43D33B763FD42DC917 /* [CP] Check Pods Manifest.lock */,
 				8D3F6FA22743153100F5EC7F /* Sources */,
 				8D3F6FA32743153100F5EC7F /* Frameworks */,
 				8D3F6FA42743153100F5EC7F /* Resources */,
+				2A882E8EA65E0617FAFFA151 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +153,52 @@
 			files = (
 				8D3F6FB62743153300F5EC7F /* LaunchScreen.storyboard in Resources */,
 				8D3F6FB32743153300F5EC7F /* Assets.xcassets in Resources */,
-				8D3F6FB12743153100F5EC7F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A882E8EA65E0617FAFFA151 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearningTexture/Pods-LearningTexture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearningTexture/Pods-LearningTexture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearningTexture/Pods-LearningTexture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB7E4D43D33B763FD42DC917 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearningTexture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D3F6FA22743153100F5EC7F /* Sources */ = {
@@ -140,6 +207,7 @@
 			files = (
 				8D3F6FAE2743153100F5EC7F /* ViewController.swift in Sources */,
 				8D3F6FAA2743153100F5EC7F /* AppDelegate.swift in Sources */,
+				8DC752AE274317EA00A4A7B3 /* BaseNode.swift in Sources */,
 				8D3F6FAC2743153100F5EC7F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +215,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8D3F6FAF2743153100F5EC7F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8D3F6FB02743153100F5EC7F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8D3F6FB42743153300F5EC7F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +344,7 @@
 		};
 		8D3F6FBB2743153300F5EC7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0855F9F1C8C1BCE0A97D686 /* Pods-LearningTexture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,7 +355,7 @@
 				INFOPLIST_FILE = LearningTexture/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +373,7 @@
 		};
 		8D3F6FBC2743153300F5EC7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ACCDBC8356C55DCC832BFA0 /* Pods-LearningTexture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,7 +384,7 @@
 				INFOPLIST_FILE = LearningTexture/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
