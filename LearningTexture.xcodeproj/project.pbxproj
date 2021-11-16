@@ -27,6 +27,12 @@
 		8DC752CD2743405400A4A7B3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752CC2743405400A4A7B3 /* Comment.swift */; };
 		8DC752D0274340A400A4A7B3 /* instaClone.json in Resources */ = {isa = PBXBuildFile; fileRef = 8DC752CF274340A400A4A7B3 /* instaClone.json */; };
 		8DC752D3274340FD00A4A7B3 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752D2274340FD00A4A7B3 /* Bundle+Extension.swift */; };
+		8DC752D52743499100A4A7B3 /* LastCommentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752D42743499100A4A7B3 /* LastCommentNode.swift */; };
+		8DC752D727434D5E00A4A7B3 /* StoryFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752D627434D5E00A4A7B3 /* StoryFeedCell.swift */; };
+		8DC752D927434E0800A4A7B3 /* StoryFeedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752D827434E0800A4A7B3 /* StoryFeedNode.swift */; };
+		8DC752DB27434E7900A4A7B3 /* StoryFeedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752DA27434E7900A4A7B3 /* StoryFeedDataSource.swift */; };
+		8DC752DE2743560D00A4A7B3 /* UserStoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752DD2743560D00A4A7B3 /* UserStoryCell.swift */; };
+		8DC752E02743566200A4A7B3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752DF2743566200A4A7B3 /* UIColor+Extension.swift */; };
 		D83880E505722122F9213A79 /* Pods_LearningTexture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0F4ADFBE460F14CDA7AC1A /* Pods_LearningTexture.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +60,12 @@
 		8DC752CC2743405400A4A7B3 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		8DC752CF274340A400A4A7B3 /* instaClone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = instaClone.json; sourceTree = "<group>"; };
 		8DC752D2274340FD00A4A7B3 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		8DC752D42743499100A4A7B3 /* LastCommentNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCommentNode.swift; sourceTree = "<group>"; };
+		8DC752D627434D5E00A4A7B3 /* StoryFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryFeedCell.swift; sourceTree = "<group>"; };
+		8DC752D827434E0800A4A7B3 /* StoryFeedNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryFeedNode.swift; sourceTree = "<group>"; };
+		8DC752DA27434E7900A4A7B3 /* StoryFeedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryFeedDataSource.swift; sourceTree = "<group>"; };
+		8DC752DD2743560D00A4A7B3 /* UserStoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStoryCell.swift; sourceTree = "<group>"; };
+		8DC752DF2743566200A4A7B3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		D0855F9F1C8C1BCE0A97D686 /* Pods-LearningTexture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningTexture.debug.xcconfig"; path = "Target Support Files/Pods-LearningTexture/Pods-LearningTexture.debug.xcconfig"; sourceTree = "<group>"; };
 		FF0F4ADFBE460F14CDA7AC1A /* Pods_LearningTexture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningTexture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +161,10 @@
 				8DC752BD2743222000A4A7B3 /* HeaderNode.swift */,
 				8DC752BF2743376900A4A7B3 /* FeedImageNode.swift */,
 				8DC752C12743386500A4A7B3 /* SocialNode.swift */,
+				8DC752D42743499100A4A7B3 /* LastCommentNode.swift */,
+				8DC752DD2743560D00A4A7B3 /* UserStoryCell.swift */,
+				8DC752D627434D5E00A4A7B3 /* StoryFeedCell.swift */,
+				8DC752D827434E0800A4A7B3 /* StoryFeedNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -157,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				8DC752B727431DE600A4A7B3 /* HomeDataSource.swift */,
+				8DC752DA27434E7900A4A7B3 /* StoryFeedDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -201,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				8DC752D2274340FD00A4A7B3 /* Bundle+Extension.swift */,
+				8DC752DF2743566200A4A7B3 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,10 +339,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D3F6FAE2743153100F5EC7F /* ViewController.swift in Sources */,
+				8DC752DB27434E7900A4A7B3 /* StoryFeedDataSource.swift in Sources */,
 				8DC752D3274340FD00A4A7B3 /* Bundle+Extension.swift in Sources */,
 				8DC752C727433F4F00A4A7B3 /* Stories.swift in Sources */,
 				8DC752B827431DE600A4A7B3 /* HomeDataSource.swift in Sources */,
 				8DC752CB2743403300A4A7B3 /* NewsFeed.swift in Sources */,
+				8DC752D52743499100A4A7B3 /* LastCommentNode.swift in Sources */,
 				8D3F6FAA2743153100F5EC7F /* AppDelegate.swift in Sources */,
 				8DC752BE2743222000A4A7B3 /* HeaderNode.swift in Sources */,
 				8DC752B627431CAB00A4A7B3 /* HomePresentation.swift in Sources */,
@@ -332,7 +352,11 @@
 				8DC752BA27431F9000A4A7B3 /* NewsFeedCell.swift in Sources */,
 				8DC752AE274317EA00A4A7B3 /* BaseNode.swift in Sources */,
 				8DC752BC27431FB700A4A7B3 /* BaseCellNode.swift in Sources */,
+				8DC752D727434D5E00A4A7B3 /* StoryFeedCell.swift in Sources */,
 				8DC752CD2743405400A4A7B3 /* Comment.swift in Sources */,
+				8DC752DE2743560D00A4A7B3 /* UserStoryCell.swift in Sources */,
+				8DC752E02743566200A4A7B3 /* UIColor+Extension.swift in Sources */,
+				8DC752D927434E0800A4A7B3 /* StoryFeedNode.swift in Sources */,
 				8D3F6FAC2743153100F5EC7F /* SceneDelegate.swift in Sources */,
 				8DC752C527433EFF00A4A7B3 /* BaseDataSource.swift in Sources */,
 				8DC752C02743376900A4A7B3 /* FeedImageNode.swift in Sources */,

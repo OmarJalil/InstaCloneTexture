@@ -10,8 +10,9 @@ import AsyncDisplayKit
 class NewsFeedCell: BaseCellNode {
     
     let headerNode = HeaderNode()
-    let feedImage = FeedImageNode()
-    let socialButtons = SocialNode()
+    let feedImageNode = FeedImageNode()
+    let socialButtonsNode = SocialNode()
+    let lastCommentNode = LastCommentNode()
     
     var newsFeed: NewsFeed?
     
@@ -23,12 +24,21 @@ class NewsFeedCell: BaseCellNode {
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
         
+        var elements = [ASLayoutElement]()
+        elements.append(headerNode)
+        elements.append(feedImageNode)
+        elements.append(socialButtonsNode)
+        
+        if let lastComment = newsFeed?.lastComment, lastComment.comment?.isEmpty == false {
+            elements.append(lastCommentNode)
+        }
+        
         let vStack = ASStackLayoutSpec(
             direction: .vertical,
             spacing: 0,
             justifyContent: .start,
             alignItems: .stretch,
-            children: [headerNode, feedImage, socialButtons])
+            children: elements)
         
         return vStack
     }
@@ -38,7 +48,8 @@ class NewsFeedCell: BaseCellNode {
         guard let feed = feed else { return }
         
         headerNode.populate(user: feed.user)
-        socialButtons.populate(feed: feed)
-        feedImage.populate(feed: feed)
+        socialButtonsNode.populate(feed: feed)
+        feedImageNode.populate(feed: feed)
+        lastCommentNode.populate(feed: feed)
     }
 }

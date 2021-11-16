@@ -26,7 +26,7 @@ class HomeDataSource: NSObject, ASTableDataSource {
         return { [weak self] in
             
             if indexPath.section == 0 {
-                let cell = ASCellNode()
+                let cell = StoryFeedNode(stories: self?.dataSource?.stories, user: self?.dataSource?.myUser)
                 return cell
             }
             
