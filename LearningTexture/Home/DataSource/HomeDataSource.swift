@@ -21,16 +21,19 @@ class HomeDataSource: NSObject, ASTableDataSource {
         return section == 0 ? 1 : dataSource?.newsFeed?.count ?? 0
     }
     
-    func tableNode(_ tableNode: ASTableNode, nodeForRowAt indexPath: IndexPath) -> ASCellNode {
+    func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
         
-        if indexPath.section == 0 {
-            let cell = ASCellNode()
+        return { [weak self] in
+            
+            if indexPath.section == 0 {
+                let cell = ASCellNode()
+                return cell
+            }
+            
+            let feed = self?.dataSource?.newsFeed?[indexPath.row]
+            let cell = NewsFeedCell(feed: feed)
             return cell
         }
-        
-        let feed = dataSource?.newsFeed?[indexPath.row]
-        let cell = NewsFeedCell(feed: feed)
-        return cell
     }
     
     func fetchData() {
