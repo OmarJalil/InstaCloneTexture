@@ -33,6 +33,7 @@
 		8DC752DB27434E7900A4A7B3 /* StoryFeedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752DA27434E7900A4A7B3 /* StoryFeedDataSource.swift */; };
 		8DC752DE2743560D00A4A7B3 /* UserStoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752DD2743560D00A4A7B3 /* UserStoryCell.swift */; };
 		8DC752E02743566200A4A7B3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752DF2743566200A4A7B3 /* UIColor+Extension.swift */; };
+		8DC752E227435B1B00A4A7B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752E127435B1B00A4A7B3 /* Constants.swift */; };
 		D83880E505722122F9213A79 /* Pods_LearningTexture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0F4ADFBE460F14CDA7AC1A /* Pods_LearningTexture.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		8DC752DA27434E7900A4A7B3 /* StoryFeedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryFeedDataSource.swift; sourceTree = "<group>"; };
 		8DC752DD2743560D00A4A7B3 /* UserStoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStoryCell.swift; sourceTree = "<group>"; };
 		8DC752DF2743566200A4A7B3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		8DC752E127435B1B00A4A7B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D0855F9F1C8C1BCE0A97D686 /* Pods-LearningTexture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningTexture.debug.xcconfig"; path = "Target Support Files/Pods-LearningTexture/Pods-LearningTexture.debug.xcconfig"; sourceTree = "<group>"; };
 		FF0F4ADFBE460F14CDA7AC1A /* Pods_LearningTexture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningTexture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -139,6 +141,7 @@
 				8D3F6FAB2743153100F5EC7F /* SceneDelegate.swift */,
 				8DC752AD274317EA00A4A7B3 /* BaseNode.swift */,
 				8DC752BB27431FB700A4A7B3 /* BaseCellNode.swift */,
+				8DC752E127435B1B00A4A7B3 /* Constants.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				8DC752C527433EFF00A4A7B3 /* BaseDataSource.swift in Sources */,
 				8DC752C02743376900A4A7B3 /* FeedImageNode.swift in Sources */,
 				8DC752C22743386500A4A7B3 /* SocialNode.swift in Sources */,
+				8DC752E227435B1B00A4A7B3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

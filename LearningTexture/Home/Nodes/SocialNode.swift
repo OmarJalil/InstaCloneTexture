@@ -60,16 +60,39 @@ class SocialNode: BaseNode {
         return vStack
     }
     
+    override func asyncTraitCollectionDidChange(withPreviousTraitCollection previousTraitCollection: ASPrimitiveTraitCollection) {
+        super.asyncTraitCollectionDidChange(withPreviousTraitCollection: previousTraitCollection)
+        setupDynamicColors()
+    }
+    
     private func setup() {
         shareButtonNode.style.preferredSize = CGSize(width: 30, height: 30)
         likeButtonNode.style.preferredSize = CGSize(width: 30, height: 30)
         commentButtonNode.style.preferredSize = CGSize(width: 30, height: 30)
         bookmarkButtonNode.style.preferredSize = CGSize(width: 30, height: 30)
         
-        likeButtonNode.setImage(UIImage(named: "like"), for: .normal)
-        shareButtonNode.setImage(UIImage(named: "share"), for: .normal)
-        commentButtonNode.setImage(UIImage(named: "comment"), for: .normal)
-        bookmarkButtonNode.setImage(UIImage(named: "bookmark"), for: .normal)
+        setupDynamicColors()
+    }
+    
+    private func setupDynamicColors() {
+        
+        if let color = colorSet {
+            
+            let primative = ASPrimitiveTraitCollectionMakeDefault()
+            
+            let imageLike = ASImageNodeTintColorModificationBlock(color)(UIImage(named: "like")!, primative)
+            likeButtonNode.setImage(imageLike, for: .normal)
+            
+            let imageComment = ASImageNodeTintColorModificationBlock(color)(UIImage(named: "comment")!, primative)
+            commentButtonNode.setImage(imageComment, for: .normal)
+            
+            let imageShare = ASImageNodeTintColorModificationBlock(color)(UIImage(named: "share")!, primative)
+            shareButtonNode.setImage(imageShare, for: .normal)
+            
+            let imageBookmark = ASImageNodeTintColorModificationBlock(color)(UIImage(named: "bookmark")!, primative)
+            bookmarkButtonNode.setImage(imageBookmark, for: .normal)
+            
+        }
     }
     
     func populate(feed: NewsFeed) {

@@ -22,6 +22,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let viewController = ViewController()
         let navigationController = ASDKNavigationController(rootViewController: viewController)
         navigationController.navigationBar.topItem?.title = "InstaClone"
+        
+        if #available(iOS 15.0, *) {
+
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = .systemBackground
+            appearance.shadowColor = .clear
+            navigationController.navigationBar.standardAppearance = appearance
+            navigationController.navigationBar.scrollEdgeAppearance = navigationController.navigationBar.standardAppearance
+
+        }
+        navigationController.navigationBar.barTintColor = .systemBackground
+        navigationController.navigationBar.compactAppearance?.backgroundColor = .systemBackground
+        navigationController.navigationBar.standardAppearance.backgroundColor = .systemBackground
+        navigationController.navigationBar.scrollEdgeAppearance?.backgroundColor = .systemBackground
+        navigationController.navigationBar.compactAppearance?.titleTextAttributes = [.foregroundColor: UIColor.label]
+        navigationController.navigationBar.standardAppearance.titleTextAttributes = [.foregroundColor: UIColor.label]
+        navigationController.navigationBar.scrollEdgeAppearance?.titleTextAttributes = [.foregroundColor: UIColor.label]
+        
         navigationController.navigationBar.prefersLargeTitles = true
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

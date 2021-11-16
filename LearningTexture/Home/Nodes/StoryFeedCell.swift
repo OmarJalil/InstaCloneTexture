@@ -31,8 +31,8 @@ class StoryFeedCell: BaseCellNode {
     private func setup() {
         let cornerRadius: CGFloat = 63.0
         nameNode.maximumNumberOfLines = 1
+        imageNode.backgroundColor = .white
         imageNode.style.preferredSize = CGSize(width: 63, height: 63)
-        imageNode.cornerRoundingType = .precomposited
         imageNode.cornerRadius = cornerRadius/2
     }
 }

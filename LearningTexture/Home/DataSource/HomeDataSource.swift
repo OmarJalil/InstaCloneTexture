@@ -38,7 +38,7 @@ class HomeDataSource: NSObject, ASTableDataSource {
     
     func fetchData() {
         
-        dataSource = Bundle.main.decode(BaseDataSource.self, from: "instaClone.json")
+        dataSource = Bundle.main.decode(BaseDataSource.self, from: JSONFile)
         
         if let _ = dataSource {
             reloadTableView?()

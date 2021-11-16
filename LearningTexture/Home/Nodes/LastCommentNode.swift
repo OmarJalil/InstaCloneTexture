@@ -48,9 +48,8 @@ class LastCommentNode: BaseNode {
     }
     
     private func setup() {
+        imageNode.backgroundColor = .white
         imageNode.style.preferredSize = CGSize(width: 20, height: 20)
-        let cornerRadius: CGFloat = 20.0
-        imageNode.cornerRoundingType = .precomposited
-        imageNode.cornerRadius = cornerRadius / 2
+        imageNode.cornerRadius = 20 / 2
     }
 }

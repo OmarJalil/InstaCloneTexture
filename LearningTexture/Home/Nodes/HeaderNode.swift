@@ -48,14 +48,27 @@ class HeaderNode: BaseNode {
         return finalSpec
     }
     
+    override func asyncTraitCollectionDidChange(withPreviousTraitCollection previousTraitCollection: ASPrimitiveTraitCollection) {
+        super.asyncTraitCollectionDidChange(withPreviousTraitCollection: previousTraitCollection)
+        
+        setupDynamicColor()
+    }
+    
+    private func setupDynamicColor() {
+        
+        if let color = colorSet {
+            let primative = ASPrimitiveTraitCollectionMakeDefault()
+            let image = ASImageNodeTintColorModificationBlock(color)(UIImage(named: "elipse")!, primative)
+            extrasButton.setImage(image, for: .normal)
+        }
+    }
+    
     private func setup() {
         
+        profileImage.backgroundColor = .white
         profileImage.cornerRadius = 35 / 2
         profileImage.style.preferredSize = CGSize(width: 35, height: 35)
-                
-        let primative = ASPrimitiveTraitCollectionMakeDefault()
-        let image = ASImageNodeTintColorModificationBlock(.black)(UIImage(named: "elipse")!, primative)
-        extrasButton.setImage(image, for: .normal)
+        
         extrasButton.style.preferredSize = CGSize(width: 10, height: 10)
     }
     

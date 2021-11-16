@@ -17,7 +17,7 @@ class ViewController: ASDKViewController<BaseNode> {
         
         // node is the equivalent of self.view
         node.addSubnode(newsFeed)
-        node.backgroundColor = .white
+        node.backgroundColor = .systemBackground
         
         /// https://texturegroup.org/docs/layout2-layoutspec-types.html#asinsetlayoutspec
         node.layoutSpecBlock = { node, constrainedSize in
