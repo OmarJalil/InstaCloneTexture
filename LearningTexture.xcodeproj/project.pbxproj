@@ -20,6 +20,12 @@
 		8DC752BE2743222000A4A7B3 /* HeaderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752BD2743222000A4A7B3 /* HeaderNode.swift */; };
 		8DC752C02743376900A4A7B3 /* FeedImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752BF2743376900A4A7B3 /* FeedImageNode.swift */; };
 		8DC752C22743386500A4A7B3 /* SocialNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752C12743386500A4A7B3 /* SocialNode.swift */; };
+		8DC752C527433EFF00A4A7B3 /* BaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752C427433EFF00A4A7B3 /* BaseDataSource.swift */; };
+		8DC752C727433F4F00A4A7B3 /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752C627433F4F00A4A7B3 /* Stories.swift */; };
+		8DC752C92743400C00A4A7B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752C82743400C00A4A7B3 /* User.swift */; };
+		8DC752CB2743403300A4A7B3 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752CA2743403300A4A7B3 /* NewsFeed.swift */; };
+		8DC752CD2743405400A4A7B3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752CC2743405400A4A7B3 /* Comment.swift */; };
+		8DC752D0274340A400A4A7B3 /* instaClone.json in Resources */ = {isa = PBXBuildFile; fileRef = 8DC752CF274340A400A4A7B3 /* instaClone.json */; };
 		D83880E505722122F9213A79 /* Pods_LearningTexture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0F4ADFBE460F14CDA7AC1A /* Pods_LearningTexture.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +46,12 @@
 		8DC752BD2743222000A4A7B3 /* HeaderNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderNode.swift; sourceTree = "<group>"; };
 		8DC752BF2743376900A4A7B3 /* FeedImageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageNode.swift; sourceTree = "<group>"; };
 		8DC752C12743386500A4A7B3 /* SocialNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNode.swift; sourceTree = "<group>"; };
+		8DC752C427433EFF00A4A7B3 /* BaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataSource.swift; sourceTree = "<group>"; };
+		8DC752C627433F4F00A4A7B3 /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
+		8DC752C82743400C00A4A7B3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8DC752CA2743403300A4A7B3 /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
+		8DC752CC2743405400A4A7B3 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		8DC752CF274340A400A4A7B3 /* instaClone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = instaClone.json; sourceTree = "<group>"; };
 		D0855F9F1C8C1BCE0A97D686 /* Pods-LearningTexture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningTexture.debug.xcconfig"; path = "Target Support Files/Pods-LearningTexture/Pods-LearningTexture.debug.xcconfig"; sourceTree = "<group>"; };
 		FF0F4ADFBE460F14CDA7AC1A /* Pods_LearningTexture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningTexture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +118,8 @@
 		8DC752AF27431C3900A4A7B3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				8DC752CE2743409600A4A7B3 /* Resources */,
+				8DC752C327433EEF00A4A7B3 /* Models */,
 				8D3F6FA92743153100F5EC7F /* AppDelegate.swift */,
 				8D3F6FAB2743153100F5EC7F /* SceneDelegate.swift */,
 				8DC752AD274317EA00A4A7B3 /* BaseNode.swift */,
@@ -158,6 +172,26 @@
 				8DC752B527431CAB00A4A7B3 /* HomePresentation.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		8DC752C327433EEF00A4A7B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DC752C427433EFF00A4A7B3 /* BaseDataSource.swift */,
+				8DC752C627433F4F00A4A7B3 /* Stories.swift */,
+				8DC752C82743400C00A4A7B3 /* User.swift */,
+				8DC752CA2743403300A4A7B3 /* NewsFeed.swift */,
+				8DC752CC2743405400A4A7B3 /* Comment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8DC752CE2743409600A4A7B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC752CF274340A400A4A7B3 /* instaClone.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DC752D0274340A400A4A7B3 /* instaClone.json in Resources */,
 				8D3F6FB62743153300F5EC7F /* LaunchScreen.storyboard in Resources */,
 				8D3F6FB32743153300F5EC7F /* Assets.xcassets in Resources */,
 			);
@@ -275,14 +310,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D3F6FAE2743153100F5EC7F /* ViewController.swift in Sources */,
+				8DC752C727433F4F00A4A7B3 /* Stories.swift in Sources */,
 				8DC752B827431DE600A4A7B3 /* HomeDataSource.swift in Sources */,
+				8DC752CB2743403300A4A7B3 /* NewsFeed.swift in Sources */,
 				8D3F6FAA2743153100F5EC7F /* AppDelegate.swift in Sources */,
 				8DC752BE2743222000A4A7B3 /* HeaderNode.swift in Sources */,
 				8DC752B627431CAB00A4A7B3 /* HomePresentation.swift in Sources */,
+				8DC752C92743400C00A4A7B3 /* User.swift in Sources */,
 				8DC752BA27431F9000A4A7B3 /* NewsFeedCell.swift in Sources */,
 				8DC752AE274317EA00A4A7B3 /* BaseNode.swift in Sources */,
 				8DC752BC27431FB700A4A7B3 /* BaseCellNode.swift in Sources */,
+				8DC752CD2743405400A4A7B3 /* Comment.swift in Sources */,
 				8D3F6FAC2743153100F5EC7F /* SceneDelegate.swift in Sources */,
+				8DC752C527433EFF00A4A7B3 /* BaseDataSource.swift in Sources */,
 				8DC752C02743376900A4A7B3 /* FeedImageNode.swift in Sources */,
 				8DC752C22743386500A4A7B3 /* SocialNode.swift in Sources */,
 			);
