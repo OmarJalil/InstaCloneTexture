@@ -26,6 +26,7 @@
 		8DC752CB2743403300A4A7B3 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752CA2743403300A4A7B3 /* NewsFeed.swift */; };
 		8DC752CD2743405400A4A7B3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752CC2743405400A4A7B3 /* Comment.swift */; };
 		8DC752D0274340A400A4A7B3 /* instaClone.json in Resources */ = {isa = PBXBuildFile; fileRef = 8DC752CF274340A400A4A7B3 /* instaClone.json */; };
+		8DC752D3274340FD00A4A7B3 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC752D2274340FD00A4A7B3 /* Bundle+Extension.swift */; };
 		D83880E505722122F9213A79 /* Pods_LearningTexture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0F4ADFBE460F14CDA7AC1A /* Pods_LearningTexture.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		8DC752CA2743403300A4A7B3 /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
 		8DC752CC2743405400A4A7B3 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		8DC752CF274340A400A4A7B3 /* instaClone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = instaClone.json; sourceTree = "<group>"; };
+		8DC752D2274340FD00A4A7B3 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		D0855F9F1C8C1BCE0A97D686 /* Pods-LearningTexture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningTexture.debug.xcconfig"; path = "Target Support Files/Pods-LearningTexture/Pods-LearningTexture.debug.xcconfig"; sourceTree = "<group>"; };
 		FF0F4ADFBE460F14CDA7AC1A /* Pods_LearningTexture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningTexture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 		8DC752AF27431C3900A4A7B3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				8DC752D1274340EF00A4A7B3 /* Extensions */,
 				8DC752CE2743409600A4A7B3 /* Resources */,
 				8DC752C327433EEF00A4A7B3 /* Models */,
 				8D3F6FA92743153100F5EC7F /* AppDelegate.swift */,
@@ -192,6 +195,14 @@
 				8DC752CF274340A400A4A7B3 /* instaClone.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8DC752D1274340EF00A4A7B3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8DC752D2274340FD00A4A7B3 /* Bundle+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D3F6FAE2743153100F5EC7F /* ViewController.swift in Sources */,
+				8DC752D3274340FD00A4A7B3 /* Bundle+Extension.swift in Sources */,
 				8DC752C727433F4F00A4A7B3 /* Stories.swift in Sources */,
 				8DC752B827431DE600A4A7B3 /* HomeDataSource.swift in Sources */,
 				8DC752CB2743403300A4A7B3 /* NewsFeed.swift in Sources */,

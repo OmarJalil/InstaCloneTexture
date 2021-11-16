@@ -15,12 +15,11 @@ class SocialNode: BaseNode {
     let bookmarkButtonNode = ASButtonNode()
     
     var likesTextNode = ASTextNode()
-    var likesCount: Int? = 10
+    var likesCount: Int?
     
     override init() {
         super.init()
         setup()
-        populate(with: likesCount)
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
@@ -73,8 +72,9 @@ class SocialNode: BaseNode {
         bookmarkButtonNode.setImage(UIImage(named: "bookmark"), for: .normal)
     }
     
-    func populate(with numberOfLikes: Int?) {
-        guard let numberOfLikes = numberOfLikes else { return }
+    func populate(feed: NewsFeed) {
+        guard let numberOfLikes = feed.likes else { return }
+        likesCount = feed.likes ?? 0
         let stringValueForLikes = numberOfLikes > 1 ? "\(numberOfLikes) likes" : "1 like"
         likesTextNode.attributedText = NSAttributedString(string: stringValueForLikes, attributes: [.foregroundColor: UIColor.label,
                                                                                                         .font: UIFont.boldSystemFont(ofSize: 13)])

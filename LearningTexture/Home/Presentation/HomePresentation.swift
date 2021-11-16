@@ -17,10 +17,19 @@ class HomePresentation: BaseNode {
         table.allowsSelection = false
         table.backgroundColor = .white
         table.dataSource = dataSource
+        closureSetup()
+        dataSource.fetchData()
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
         return ASInsetLayoutSpec(insets: .zero, child: self.table)
+    }
+    
+    private func closureSetup() {
+        
+        dataSource.reloadTableView = { [weak self] in
+            self?.table.reloadData()
+        }
     }
     
 }

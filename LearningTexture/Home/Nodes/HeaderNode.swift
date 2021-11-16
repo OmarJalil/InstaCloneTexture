@@ -50,17 +50,20 @@ class HeaderNode: BaseNode {
     
     private func setup() {
         
-        profileImage.backgroundColor = .green
         profileImage.cornerRadius = 35 / 2
         profileImage.style.preferredSize = CGSize(width: 35, height: 35)
-        
-        name.attributedText = NSAttributedString(string: "Texture is cool", attributes: [.font: UIFont.boldSystemFont(ofSize: 17),
-                                                                                         .foregroundColor: UIColor.label])
-        
+                
         let primative = ASPrimitiveTraitCollectionMakeDefault()
         let image = ASImageNodeTintColorModificationBlock(.black)(UIImage(named: "elipse")!, primative)
         extrasButton.setImage(image, for: .normal)
         extrasButton.style.preferredSize = CGSize(width: 10, height: 10)
+    }
+    
+    public func populate(user: User?) {
+       
+        profileImage.url = URL(string: user?.profileIcon ?? "")
+        name.attributedText = NSAttributedString(string: user?.username ?? "", attributes: [.font: UIFont.boldSystemFont(ofSize: 17),
+                                                                                            .foregroundColor: UIColor.label])
     }
     
 }

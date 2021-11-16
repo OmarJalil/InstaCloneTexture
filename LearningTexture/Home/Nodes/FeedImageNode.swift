@@ -21,8 +21,12 @@ class FeedImageNode: BaseNode {
     }
     
     private func setup() {
-        imageNode.backgroundColor = .purple
         imageNode.style.preferredSize.height = UIScreen.main.bounds.width / 2
         imageNode.style.preferredSize.width = UIScreen.main.bounds.width
+    }
+    
+    public func populate(feed: NewsFeed) {
+        
+        imageNode.url = URL(string: feed.imageUrl ?? "")
     }
 }
